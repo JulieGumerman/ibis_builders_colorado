@@ -1,0 +1,46 @@
+.content-wrapper {
+  margin: 20px;
+}
+.blurb-holder {
+  border: 1px purple solid;
+}
+@media screen and (min-width: 768px) {
+  .blurb-holder {
+    display: flex;
+  }
+}
+.blurb-holder h4 {
+  border: 1px green solid;
+}
+.blurb-holder ul {
+  border: 1px red solid;
+}
+.blurb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px red solid;
+  width: 100%;
+}
+.near-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px green solid;
+}
+@media screen and (min-width: 768px) {
+  .near-footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.near-footer .pic-container {
+  border: 1px blue solid;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .near-footer .pic-container {
+    display: flex;
+  }
+}
