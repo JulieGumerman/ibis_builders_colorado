@@ -1,26 +1,59 @@
+//variables
+@dark: #1a2626;
+@medium: #778899;
+@light: #f5f5f5;
+
+
+//mixins
+
+
+.header {
+    background: @dark;
+    
+    i {
+        background: @light;
+    }
+
+    h1 {
+        color: @light;;
+    }
+}
+
 .about {
-    border: 1px salmon solid;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
+
+    border: 5px salmon solid;
+    background: @medium;
+    padding: 20px;
 
     @media screen and (min-width: 768px) {
-        flex-direction: row;
-        margin: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
+        justify-content: space-between;
+    }
+
+    h2 {
+        width: 100%;
+
+    }
+
+    .col {
+        width: 48%;
     }
 }
 
 
 .blurb-holder {
     border: 1px purple solid;
-    margin: 20px;
+    padding: 20px;
+    background: @light;
 
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin: 30px;
+        padding: 30px;
 
         .blurb {
             width: 30%;
@@ -54,13 +87,13 @@
     display: flex;
     flex-direction: column;
     border: 1px green solid;
-    margin: 20px;
+    padding: 20px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 30px;
+        padding: 30px;
     }
 
     .pic-container {
