@@ -1,5 +1,7 @@
 .header {
   background: #1a2626;
+  text-align: center;
+  padding-bottom: 20px;
 }
 .header i {
   background: #f5f5f5;
@@ -8,7 +10,6 @@
   color: #f5f5f5;
 }
 .about {
-  border: 5px salmon solid;
   background: #778899;
   padding: 20px;
 }
@@ -22,9 +23,16 @@
 }
 .about h2 {
   width: 100%;
+  color: #f5f5f5;
 }
-.about .col {
-  width: 48%;
+.about p,
+.about li {
+  color: #f5f5f5;
+}
+@media screen and (min-width: 768px) {
+  .about .col {
+    width: 48%;
+  }
 }
 .blurb-holder {
   border: 1px purple solid;
@@ -36,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 30px;
+    padding: 40px;
   }
   .blurb-holder .blurb {
     width: 30%;
@@ -64,7 +72,7 @@
 .near-footer {
   display: flex;
   flex-direction: column;
-  border: 1px green solid;
+  background: #778899;
   padding: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -72,7 +80,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 30px;
+    padding: 40px;
   }
 }
 .near-footer .pic-container {

@@ -5,47 +5,61 @@
 
 
 //mixins
+.padding-mobile() {
+    padding: 20px;
+}
 
+.padding-tablet() {
+    padding: 40px;
+}
 
 .header {
     background: @dark;
+    text-align: center;
+    padding-bottom: 20px;
     
     i {
         background: @light;
     }
 
     h1 {
-        color: @light;;
+        color: @light;
     }
 }
 
 .about {
 
-    border: 5px salmon solid;
     background: @medium;
-    padding: 20px;
+    .padding-mobile();
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        padding: 40px;
+        .padding-tablet();
         justify-content: space-between;
     }
 
     h2 {
         width: 100%;
+        color: @light;
+    }
 
+    p, li {
+        color: @light;
     }
 
     .col {
-        width: 48%;
+
+        @media screen and (min-width: 768px) {
+            width: 48%;
+        }
     }
 }
 
 
 .blurb-holder {
     border: 1px purple solid;
-    padding: 20px;
+    .padding-mobile();
     background: @light;
 
 
@@ -53,7 +67,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 30px;
+        .padding-tablet();
 
         .blurb {
             width: 30%;
@@ -86,14 +100,14 @@
 .near-footer {
     display: flex;
     flex-direction: column;
-    border: 1px green solid;
-    padding: 20px;
+    background: @medium;
+    .padding-mobile();
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 30px;
+        .padding-tablet();
     }
 
     .pic-container {
