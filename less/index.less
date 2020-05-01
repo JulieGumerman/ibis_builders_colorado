@@ -1,13 +1,33 @@
-.content-wrapper {
+.about {
+    border: 1px salmon solid;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        margin: 40px;
+    }
 }
 
 
 .blurb-holder {
     border: 1px purple solid;
+    margin: 20px;
 
 
     @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 30px;
+
+        .blurb {
+            width: 30%;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
         display: flex;
     }
 
@@ -33,13 +53,16 @@
 .near-footer {
     display: flex;
     flex-direction: column;
-    width: 100%;
     border: 1px green solid;
+    margin: 20px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        margin: 30px;
     }
+
     .pic-container {
         border: 1px blue solid;
         display: none;
