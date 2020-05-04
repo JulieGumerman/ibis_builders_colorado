@@ -102,7 +102,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .near-footer .contact {
+    width: 45%;
+    border: 1px salmon solid;
   }
 }
 .near-footer .pic-container {
@@ -112,6 +119,8 @@
 @media screen and (min-width: 768px) {
   .near-footer .pic-container {
     display: flex;
+    width: 45%;
+    flex-wrap: wrap;
   }
 }
 .near-footer .pic-container img {

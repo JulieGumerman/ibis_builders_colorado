@@ -136,7 +136,15 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
         .padding-tablet();
+    }
+
+    .contact {
+        @media screen and (min-width: 768px) {
+            width: 45%;
+            border: 1px salmon solid;
+        }
     }
 
     .pic-container {
@@ -145,6 +153,8 @@
 
         @media screen and (min-width: 768px) {
             display: flex;
+            width: 45%;
+            flex-wrap: wrap;
 
         }
 
