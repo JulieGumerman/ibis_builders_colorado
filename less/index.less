@@ -13,6 +13,10 @@
     padding: 40px;
 }
 
+.padding-desktop() {
+    padding: 60px;
+}
+
 .header {
     background: @dark;
     text-align: center;
@@ -27,6 +31,27 @@
     }
 }
 
+.hero-image {
+
+    margin-bottom: -5px;
+    figure {
+
+        
+
+        @media screen and (min-width: 1000px) {
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 100%;
+
+            @media screen and (min-width: 1000px) {
+                width: 70%;
+            }
+        }
+    }
+}
+
 .about {
 
     background: @medium;
@@ -36,7 +61,11 @@
         display: flex;
         flex-wrap: wrap;
         .padding-tablet();
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+        .padding-desktop();
     }
 
     h2 {
@@ -116,7 +145,14 @@
 
         @media screen and (min-width: 768px) {
             display: flex;
+
         }
+
+
+        img {
+            max-width: 100%;
+        }
+
     }
 
 }

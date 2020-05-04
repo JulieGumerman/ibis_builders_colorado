@@ -9,6 +9,23 @@
 .header h1 {
   color: #f5f5f5;
 }
+.hero-image {
+  margin-bottom: -5px;
+}
+@media screen and (min-width: 1000px) {
+  .hero-image figure {
+    display: flex;
+    justify-content: center;
+  }
+}
+.hero-image figure img {
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .hero-image figure img {
+    width: 70%;
+  }
+}
 .about {
   background: #778899;
   padding: 20px;
@@ -18,7 +35,12 @@
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 60px;
   }
 }
 .about h2 {
@@ -91,4 +113,7 @@
   .near-footer .pic-container {
     display: flex;
   }
+}
+.near-footer .pic-container img {
+  max-width: 100%;
 }
