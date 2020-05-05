@@ -1,0 +1,28 @@
+.navbar {
+    background: @medium;
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        li {
+            padding-top: 20px;
+            padding-bottom: 20px;            
+            list-style-type: none;
+            border-bottom: @dark solid 2px;
+            a {
+                text-decoration: none;
+                color: @dark;
+                
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+    }
+}

@@ -111,6 +111,31 @@
 .slideshow-container-bathrooms .mySlides-br {
   display: none;
 }
+.navbar {
+  background: #778899;
+}
+.navbar nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar nav li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  list-style-type: none;
+  border-bottom: #1a2626 solid 2px;
+}
+.navbar nav li a {
+  text-decoration: none;
+  color: #1a2626;
+}
+@media screen and (min-width: 768px) {
+  .navbar nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .header {
   background: #1a2626;
   text-align: center;
