@@ -102,3 +102,29 @@ function showSlidesRailings(y) {
   slidesRailings[slideIndexRailings-1].style.display = "block";
 
 }
+
+/**********************Bathroom slideshow functionality ***************/
+let slideIndexBathroom = 1;
+showSlidesBathroom(slideIndexBathroom);
+
+// Next/previous controls
+function plusSlidesBathroom(e) {
+  showSlidesBathroom(slideIndexBathroom += e);
+}
+
+// Thumbnail image controls
+function currentSlideBathroom(e) {
+  showSlidesRailings(slideIndexBathroom = e);
+}
+
+function showSlidesBathroom(x) {
+  var slidesBathrooms = document.getElementsByClassName("mySlides-br");
+  if (x > slidesBathrooms.length) {slideIndexBathroom = 1}
+  if (x < 1) {slideIndexBathroom = slidesBathrooms.length}
+  for (n = 0; n < slidesBathrooms.length; n++) {
+      slidesBathrooms[n].style.display = "none";
+  }
+
+  slidesBathrooms[slideIndexBathroom-1].style.display = "block";
+
+}
