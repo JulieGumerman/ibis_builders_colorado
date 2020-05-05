@@ -66,7 +66,6 @@ function currentSlideBasement(a) {
 }
 
 function showSlidesBasement(z) {
-  var i;
   var slidesBasement = document.getElementsByClassName("mySlides-basement");
   if (z > slidesBasement.length) {slideIndexBasement = 1}
   if (z < 1) {slideIndexBasement = slides.length}
@@ -75,5 +74,31 @@ function showSlidesBasement(z) {
   }
 
   slidesBasement[slideIndexBasement-1].style.display = "block";
+
+}
+
+/**********************Railing slideshow functionality ***************/
+let slideIndexRailings = 1;
+showSlidesRailings(slideIndexRailings);
+
+// Next/previous controls
+function plusSlidesRailings(d) {
+  showSlidesRailings(slideIndexRailings += d);
+}
+
+// Thumbnail image controls
+function currentSlideRailings(d) {
+  showSlidesRailings(slideIndexRailings = d);
+}
+
+function showSlidesRailings(y) {
+  var slidesRailings = document.getElementsByClassName("mySlides-r");
+  if (y > slidesRailings.length) {slideIndexRailings = 1}
+  if (y < 1) {slideIndexRailings = slidesRailings.length}
+  for (m = 0; m < slidesRailings.length; m++) {
+      slidesRailings[m].style.display = "none";
+  }
+
+  slidesRailings[slideIndexRailings-1].style.display = "block";
 
 }
