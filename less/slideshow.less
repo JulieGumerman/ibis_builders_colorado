@@ -3,20 +3,20 @@
 
 /****content wrapper on work page ****/
 .content-wrapper {
-  margin: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px blue solid;
+  background: @light;
 
 
   @media screen and (min-width: 768px) {
-    margin: 20px;
   }
 
+  .stupid-check-container {
+    margin: 10px;
+  }
   .container {
     max-width: @slideshow-width;
-    border: 1px red solid;
     margin-bottom: 30px;
   }
 }
