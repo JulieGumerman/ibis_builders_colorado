@@ -50,3 +50,30 @@ function plusSlidesOutside (b) {
   console.log("Julie was here.")
   showSlidesOutside(outsideSlideIndex+=b)
 }
+
+/****************** Basement slideshow functionality*******************/
+let slideIndexBasement = 1;
+showSlidesBasement(slideIndexBasement);
+
+// Next/previous controls
+function plusSlidesBasement(a) {
+  showSlidesBasement(slideIndexBasement += a);
+}
+
+// Thumbnail image controls
+function currentSlideBasement(a) {
+  showSlidesBasement(slideIndexBasement = a);
+}
+
+function showSlidesBasement(z) {
+  var i;
+  var slidesBasement = document.getElementsByClassName("mySlides-basement");
+  if (z > slidesBasement.length) {slideIndexBasement = 1}
+  if (z < 1) {slideIndexBasement = slides.length}
+  for (k = 0; k < slidesBasement.length; k++) {
+      slidesBasement[k].style.display = "none";
+  }
+
+  slidesBasement[slideIndexBasement-1].style.display = "block";
+
+}

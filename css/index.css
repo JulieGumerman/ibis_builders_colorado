@@ -88,6 +88,15 @@
 .mySlides-o {
   display: none;
 }
+/********************FOR BASEMENT SLIDESHOW**************************/
+.slideshow-container-basement {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container-basement .mySlides-basement {
+  display: none;
+}
 .header {
   background: #1a2626;
   text-align: center;
