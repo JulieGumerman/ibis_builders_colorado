@@ -11,10 +11,7 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-const plusSlidesOutside = (b) => {
-  console.log("Julie was here.")
-  showsSlidesOutside(slideIndex += b)
-}
+
 
 // Thumbnail image controls
 function currentSlide(n) {
@@ -49,3 +46,7 @@ function showSlidesOutside (b) {
   outsideSlides[outsideSlideIndex-1].style.display = "block";
 }
 
+function plusSlidesOutside (b) {
+  console.log("Julie was here.")
+  showSlidesOutside(outsideSlideIndex+=b)
+}
