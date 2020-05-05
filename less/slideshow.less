@@ -1,8 +1,32 @@
+/* variables */
+@slideshow-width: 500px;
+
+/****content wrapper on work page ****/
+.content-wrapper {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px blue solid;
+
+
+  @media screen and (min-width: 768px) {
+    margin: 20px;
+  }
+
+  .container {
+    max-width: @slideshow-width;
+    border: 1px red solid;
+    margin-bottom: 30px;
+  }
+}
+
+/****slideshow stylez*****/
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: @slideshow-width;
   position: relative;
   margin: auto;
 }
@@ -63,7 +87,7 @@
 
 /**********************FOR OUTSIDE SLIDESHOW**************************/
 .slideshow-container-outside {
-    max-width: 1000px;
+    max-width: @slideshow-width;
     position: relative;
     margin: auto;
   }
@@ -74,7 +98,7 @@
   
 /********************FOR BASEMENT SLIDESHOW**************************/
 .slideshow-container-basement {
-    max-width: 1000px;
+    max-width: @slideshow-width;
     position: relative;
     margin: auto;
 
@@ -85,7 +109,7 @@
 
 /********************FOR BASEMENT SLIDESHOW**************************/
 .slideshow-container-railings {
-  max-width: 1000px;
+  max-width: @slideshow-width;
   position: relative;
   margin: auto;
 
@@ -96,7 +120,7 @@
 
 /********************FOR BATHROOMS SLIDESHOW**************************/
 .slideshow-container-bathrooms {
-  max-width: 1000px;
+  max-width: @slideshow-width;
   position: relative;
   margin: auto;
 
