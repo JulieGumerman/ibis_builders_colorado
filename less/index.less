@@ -91,9 +91,9 @@
 
 
 .blurb-holder {
-    border: 1px purple solid;
     .padding-mobile();
     background: @light;
+    color: @dark;
 
 
     @media screen and (min-width: 768px) {
@@ -103,20 +103,27 @@
         .padding-tablet();
 
         .blurb {
-            width: 30%;
+            width: 48%;
         }
     }
 
     @media screen and (min-width: 1200px) {
         display: flex;
+
+        .blurb {
+            width: 30%;
+        }
     }
 
     h4 {
-        border: 1px green solid;
     }
 
     ul {
-        border: 1px red solid;
+    }
+
+    i {
+        font-size: 50px;
+        color: @medium
     }
 }
 .blurb {
@@ -124,8 +131,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px red solid;
     width: 100%;
+    padding-bottom: 50px;
+
+    .button-link {
+        background-color: @medium;
+        width: 50%;
+        height: 25%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        border-radius: 5px;
+
+        
+        a {
+            text-decoration: none;
+            color: @light;
+        }
+    }
 }
 
 
