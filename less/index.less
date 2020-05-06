@@ -24,39 +24,32 @@
     padding: 60px;
 }
 
-// .header {
-//     background: @dark;
-//     text-align: center;
-//     padding-bottom: 20px;
-    
-//     i {
-//         background: @light;
-//     }
-
-//     h1 {
-//         color: @light;
-//     }
-// }
 
 .hero-image {
 
-    margin-bottom: -5px;
-    figure {
+    background: url('../img/kitchen-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+
+    // margin-bottom: -5px;
+    // figure {
 
         
 
-        @media screen and (min-width: 1000px) {
-            display: flex;
-            justify-content: center;
-        }
-        img {
-            width: 100%;
+    //     @media screen and (min-width: 1000px) {
+    //         display: flex;
+    //         justify-content: center;
+    //     }
+    //     img {
+    //         width: 100%;
 
-            @media screen and (min-width: 1000px) {
-                width: 70%;
-            }
-        }
-    }
+    //         @media screen and (min-width: 1000px) {
+    //             width: 70%;
+    //         }
+    //     }
+    // }
 }
 
 .about {
@@ -148,6 +141,13 @@
         font-size: 20px;
         border-radius: 5px;
 
+        &:hover {
+            background-color: @dark;
+
+            a {
+                color: @light;
+            }
+        }
         
         a {
             text-decoration: none;

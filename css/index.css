@@ -151,6 +151,13 @@
   align-items: center;
   font-size: 20px;
 }
+.navbar nav li:hover {
+  background: #1a2626;
+  color: #f5f5f5;
+}
+.navbar nav li:hover a {
+  color: #f5f5f5;
+}
 .navbar nav li a {
   text-decoration: none;
   color: #1a2626;
@@ -174,6 +181,10 @@
   border-radius: 5px;
   font-size: 20px;
 }
+.home-button:hover {
+  background: #1a2626;
+  color: #f5f5f5;
+}
 @media screen and (min-width: 768px) {
   .home-button {
     width: 25%;
@@ -193,21 +204,11 @@
   color: #f5f5f5;
 }
 .hero-image {
-  margin-bottom: -5px;
-}
-@media screen and (min-width: 1000px) {
-  .hero-image figure {
-    display: flex;
-    justify-content: center;
-  }
-}
-.hero-image figure img {
-  width: 100%;
-}
-@media screen and (min-width: 1000px) {
-  .hero-image figure img {
-    width: 70%;
-  }
+  background: url('../img/kitchen-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
 }
 .about {
   background: #778899;
@@ -285,6 +286,12 @@
   align-items: center;
   font-size: 20px;
   border-radius: 5px;
+}
+.blurb .button-link:hover {
+  background-color: #1a2626;
+}
+.blurb .button-link:hover a {
+  color: #f5f5f5;
 }
 .blurb .button-link a {
   text-decoration: none;
