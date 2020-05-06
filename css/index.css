@@ -1,3 +1,27 @@
+.header {
+  background: #1a2626;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header figure {
+  width: 10%;
+}
+.header figure img {
+  max-width: 100%;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+.header i {
+  background: #f5f5f5;
+}
+.header h1 {
+  color: #f5f5f5;
+}
 /* variables */
 /****content wrapper on work page ****/
 .content-wrapper {
@@ -136,17 +160,6 @@
     flex-direction: row;
     justify-content: space-around;
   }
-}
-.header {
-  background: #1a2626;
-  text-align: center;
-  padding-bottom: 20px;
-}
-.header i {
-  background: #f5f5f5;
-}
-.header h1 {
-  color: #f5f5f5;
 }
 .hero-image {
   margin-bottom: -5px;
