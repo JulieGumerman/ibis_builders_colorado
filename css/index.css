@@ -210,6 +210,13 @@
   background-position: center;
   height: 50vh;
 }
+@media screen and (min-width: 1000px) {
+  .hero-image {
+    max-width: 900px;
+    height: 60vh;
+    margin: 0 auto;
+  }
+}
 .about {
   background: #778899;
   padding: 20px;
@@ -219,12 +226,12 @@
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 60px;
+    padding: 80px;
   }
 }
 .about h2 {
