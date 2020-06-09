@@ -233,38 +233,38 @@
 .pic-container {
   display: none;
 }
-.current {
+.page-intro {
   background: #778899;
   padding: 20px;
 }
-.current h3,
-.current p {
+.page-intro h3,
+.page-intro p {
   color: #f5f5f5;
 }
-.project-progress {
+.display-wrapper {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
 @media screen and (min-width: 768px) {
-  .project-progress {
+  .display-wrapper {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
-.project-progress .project-pics {
+.display-wrapper .display-pics {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
   margin-right: 50px;
 }
 @media screen and (min-width: 768px) {
-  .project-progress .project-pics {
+  .display-wrapper .display-pics {
     flex-direction: row;
     justify-content: space-around;
   }
 }
-.project-progress figure {
+.display-wrapper figure {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
