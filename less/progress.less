@@ -1,0 +1,38 @@
+.current {
+    background: @medium;
+    padding: 20px;
+    h3, p {
+        color: @light;
+    }
+}
+
+.project-progress {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .project-pics {
+        display: flex;
+        flex-direction: column;
+        
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+
+    figure {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+}
