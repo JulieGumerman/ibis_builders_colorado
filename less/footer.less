@@ -1,11 +1,17 @@
 .footer {
     padding: 20px;
+    border-top: 10px @medium solid;
+    background-color: @more-dark;
+    color: @light;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .contact-line {
     display: flex;
-    border: red 1px solid;
-    justify-content: center;
     align-items: center;
 
     i {
@@ -16,7 +22,24 @@
 .footer-links {
     a {
         text-decoration: none;
+        color: @light;
+        
+        &:hover {
+            background-color: @medium;
+        }
     }
     display: flex;
     flex-direction: column;
+}
+
+.pic-container {
+    display: none;
+
+    // @media screen and (min-width: 1000px) {
+    //     display: flex;
+
+    //     img {
+    //         max-width: 400px;
+    //     }
+    // }
 }
