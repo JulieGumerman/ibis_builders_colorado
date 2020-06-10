@@ -17,17 +17,37 @@
     i {
         padding-right: 10px;
     }
+
+    a {
+        color: @light;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+         i {
+             display: flex;
+             align-items: center;
+         }
+
+         &:hover {
+             background: @medium;
+             border-radius: 5px;
+         }
+    }
 }
 
 .footer-links {
     a {
         text-decoration: none;
         color: @light;
+        padding: 5px;
+        margin-bottom: 5px;
         
         &:hover {
             background-color: @medium;
         }
     }
+
     display: flex;
     flex-direction: column;
 }
