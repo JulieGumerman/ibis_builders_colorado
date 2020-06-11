@@ -24,16 +24,16 @@
 }
 /* variables */
 /****content wrapper on work page ****/
-.content-wrapper {
+.content-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   background: #f5f5f5;
 }
-.content-wrapper .stupid-check-container {
+.content-container .stupid-check-container {
   margin: 10px;
 }
-.content-wrapper .container {
+.content-container .container {
   max-width: 500px;
   margin-bottom: 30px;
 }
@@ -260,12 +260,35 @@
 .page-intro p {
   color: #f5f5f5;
 }
+.wrapper {
+  display: flex;
+  width: 90%;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 60%;
+  }
+}
 .content-wrapper {
   background: #778899;
   display: flex;
   width: 90%;
+  padding-bottom: 20px;
+  flex-direction: column;
 }
-.content-wrapper h2 {
+.content-wrapper h2,
+.content-wrapper h3 {
   width: 100%;
 }
 .content-wrapper .col {
@@ -298,27 +321,12 @@
 }
 .display-wrapper {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-@media screen and (min-width: 768px) {
-  .display-wrapper {
-    padding: 40px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .display-wrapper {
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+  justify-content: center;
+  align-items: center;
 }
 .display-wrapper .display-pics {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 @media screen and (min-width: 768px) {
   .display-wrapper .display-pics {
