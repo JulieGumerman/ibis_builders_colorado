@@ -57,9 +57,9 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #778899;
+  color: #f5f5f5;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 40px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -72,7 +72,7 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: #1a2626;
+  background-color: #3c4247;
 }
 /* Caption text */
 .text {
@@ -304,6 +304,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+}
+.display-wrapper figure img {
+  max-width: 90%;
 }
 * {
   box-sizing: border-box;
