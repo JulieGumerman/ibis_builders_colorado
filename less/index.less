@@ -45,60 +45,8 @@ a {
 
 }
 
-.about {
 
-    background: @medium;
-    .padding-mobile();
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        .padding-tablet();
-        justify-content: space-between;
-    }
-
-    @media screen and (min-width: 1200px) {
-        .padding-desktop();
-    }
-
-    h2 {
-        width: 100%;
-        color: @light;
-    }
-
-    p, li {
-        color: @light;
-    }
-
-    .col {
-
-        line-height: 22px;
-        @media screen and (min-width: 768px) {
-            width: 48%;
-        }
-
-        i {
-            color: @light;
-        }
-
-        a {
-            text-decoration: none;
-            color: @light;
-            display: flex; 
-            align-items: center;
-
-            i {
-                display: flex;
-                align-items: center;
-            }
-
-            &:hover {
-                border-radius: 5px;
-                background: @more-dark;
-            }
-        }
-    }
-}
 
 
 .blurb-holder {

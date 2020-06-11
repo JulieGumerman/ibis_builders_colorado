@@ -251,24 +251,50 @@
 }
 .page-intro {
   background: #778899;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.page-intro h2,
 .page-intro h3,
 .page-intro p {
   color: #f5f5f5;
 }
+.content-wrapper {
+  background: #778899;
+  display: flex;
+  width: 90%;
+}
+.content-wrapper h2 {
+  width: 100%;
+}
+.content-wrapper .col {
+  line-height: 24px;
+}
 @media screen and (min-width: 768px) {
-  .page-intro {
-    padding: 40px;
+  .content-wrapper .col {
+    width: 46%;
+  }
+}
+.content-wrapper .col i {
+  color: #f5f5f5;
+}
+@media screen and (min-width: 768px) {
+  .content-wrapper {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
-  .page-intro {
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+  .content-wrapper {
+    width: 60%;
   }
+}
+.content-wrapper .contact-line a:hover {
+  background: #3c4247;
 }
 .display-wrapper {
   display: flex;
@@ -341,59 +367,6 @@ a {
     height: 60vh;
     margin: 0 auto;
   }
-}
-.about {
-  background: #778899;
-  padding: 20px;
-}
-@media screen and (min-width: 768px) {
-  .about {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about {
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-.about h2 {
-  width: 100%;
-  color: #f5f5f5;
-}
-.about p,
-.about li {
-  color: #f5f5f5;
-}
-.about .col {
-  line-height: 22px;
-}
-@media screen and (min-width: 768px) {
-  .about .col {
-    width: 48%;
-  }
-}
-.about .col i {
-  color: #f5f5f5;
-}
-.about .col a {
-  text-decoration: none;
-  color: #f5f5f5;
-  display: flex;
-  align-items: center;
-}
-.about .col a i {
-  display: flex;
-  align-items: center;
-}
-.about .col a:hover {
-  border-radius: 5px;
-  background: #3c4247;
 }
 .blurb-holder {
   padding: 20px;
