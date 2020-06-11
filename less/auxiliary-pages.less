@@ -1,19 +1,31 @@
 .page-intro {
     background: @medium;
-    padding: 20px;
+    .padding-mobile();
+
     h3, p {
         color: @light;
+    }
+
+    @media screen and (min-width: 768px) {
+        .padding-tablet();
+    }
+
+    @media screen and (min-width: 1200px) {
+        .padding-desktop();
     }
 }
 
 .display-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    .padding-mobile();
 
     @media screen and (min-width: 768px) {
-        padding-left: 50px;
-        padding-right: 50px;
+        .padding-tablet();
+    }
+
+    @media screen and (min-width: 1200px) {
+        .padding-desktop();
     }
 
     .display-pics {
